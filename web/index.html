@@ -1,34 +1,13 @@
 <!doctype html>
-<html lang="en-CA">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="{{DESCRIPTION}}">
-  <title>{{TITLE}} · CoolCode</title>
-  <link rel="stylesheet" href="./style.css">
-  <script type="module" src="./app.mjs"></script>
-  {{VISIT_COUNTER}}
-</head>
-<body data-tool-id="{{TOOL_ID}}">
-  <a class="skip" href="#main">Skip to content</a>
-  <header><a href="https://coolcode.ca/">← CoolCode.ca</a><a href="{{SOURCE_URL}}">Source &amp; instructions ↗</a></header>
-  <main id="main">
-    <p class="eyebrow">Browser tool starter</p>
-    <h1>{{TITLE}}</h1>
-    <p class="intro">{{DESCRIPTION}}</p>
-    <section aria-labelledby="example-title">
-      <h2 id="example-title">Clean a list</h2>
-      <p>Trim spaces, skip blank lines and remove exact duplicates. Capitalization stays distinct.</p>
-      <div class="panels">
-        <div><label for="input">Your lines</label><textarea id="input" rows="10" maxlength="100000" spellcheck="false" placeholder="Paste one item per line"></textarea></div>
-        <div><label for="output">Cleaned lines</label><textarea id="output" rows="10" readonly spellcheck="false"></textarea></div>
-      </div>
-      <div class="actions"><button id="sample" type="button">Load example</button><button id="clear" type="button">Clear</button><button id="copy" type="button" hidden>Copy result</button></div>
-      <p id="status" role="status" aria-live="polite">Paste a list to begin.</p>
-      <noscript><p>This tool needs JavaScript to process your text. The source is available above.</p></noscript>
-    </section>
-    <aside aria-label="Privacy"><strong>Stays on your device.</strong> The browser processes your text in this tab. Reloading clears it.</aside>
-  </main>
-  <footer>Part of <a href="https://coolcode.ca/">the CoolCode collection</a>. {{ISSUE_LINK}}</footer>
-</body>
-</html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="{{DESCRIPTION}}"><meta name="theme-color" content="#193d36"><title>{{TITLE}} · CoolCode</title><link rel="stylesheet" href="./style.css">{{VISIT_COUNTER}}</head>
+<body data-tool-id="{{TOOL_ID}}"><a class="skip" href="#workspace">Skip to recordings</a>
+<header class="masthead"><a class="home" href="https://coolcode.ca/">← CoolCode</a><span>FIELD NOTES / CANADA</span><a href="#about">Sources & method ↗</a></header>
+<main><section class="hero"><div class="hero-copy"><p class="eyebrow">TWO COASTS. A SHARED SONGBOOK.</p><h1>Dawn<br><em>Chorus.</em></h1><p class="intro">The same bird. A different place.<br>Listen across Atlantic and Pacific Canada.</p><a class="jump" href="#workspace">Find a voice <span>↓</span></a></div><div class="coast-art" aria-hidden="true"><div class="sun"></div><svg viewBox="0 0 600 360"><path class="mountain back" d="M0 220L95 120 144 185 225 58 310 184 385 109 475 228 540 157 600 230V360H0Z"/><path class="mountain front" d="M0 265L102 211 179 276 248 204 335 271 451 219 600 289V360H0Z"/><path class="water" d="M0 306 Q150 280 300 310T600 307M0 330Q150 306 300 331T600 330M0 352Q150 326 300 353T600 352"/><path class="bird" d="M320 88q20-20 42 2q22-22 43-6M420 62q15-12 27 3q14-17 32-6"/></svg><div class="art-label"><span>49° N / PACIFIC</span><span>45° N / ATLANTIC</span></div></div></section>
+<section class="data-strip" aria-label="Collection overview"><div><span class="metric" id="species-count">—</span><span>shared species</span></div><div><span class="metric" id="recording-count">—</span><span>source recordings</span></div><div><span class="metric" id="snapshot-date">Awaiting collection</span><span id="checked-date">Weekly source checks</span></div><div><span class="status-dot"></span><span id="dataset-label">xeno-canto collection</span></div></section>
+<section id="workspace" class="workspace"><div class="section-heading"><div><p class="eyebrow">THE LISTENING ROOM</p><h2>Choose your bird.</h2></div><button id="reset" class="quiet">Reset filters ↺</button></div>
+<p id="notice" role="status" class="notice">Loading the saved recording collection…</p>
+<div class="filters"><label class="search">Search the collection<input id="search" type="search" placeholder="Species, place, recordist or XC number"></label><label>Sound<select id="sound"><option value="all">All sounds</option><option value="song">Song</option><option value="call">Call</option></select></label><label>Recording quality<select id="quality"><option value="all">All ratings</option><option value="ab">A & B</option><option value="a">A only</option></select></label><label>Recorded month<select id="month"><option value="all">Any month</option><option value="01">January</option><option value="02">February</option><option value="03">March</option><option value="04">April</option><option value="05">May</option><option value="06">June</option><option value="07">July</option><option value="08">August</option><option value="09">September</option><option value="10">October</option><option value="11">November</option><option value="12">December</option></select></label></div>
+<div class="browse-layout"><aside class="species-nav"><label class="toggle"><input type="checkbox" id="paired" checked> Available on both coasts</label><p id="results-count" aria-live="polite"></p><div id="species-list"></div></aside><div class="comparison"><div id="comparison-heading"><h3 id="selected-name">A coast-to-coast conversation</h3><p id="selected-scientific">Select a species to compare its original recordings.</p></div><div id="recording-pair" class="recording-pair"></div><div id="empty" class="empty" hidden><span class="empty-mark">♪</span><h3>No recordings to compare yet.</h3><p id="empty-detail"></p><a href="https://xeno-canto.org/explore" target="_blank" rel="noopener noreferrer">Explore xeno-canto ↗</a></div><p class="listening-note">Listen gently. Different individuals, seasons and recording conditions can change what you hear. These examples do not establish regional dialects. Please avoid playing bird calls near wild birds.</p></div></div></section>
+<section class="collection-tools"><div><p class="eyebrow">YOUR FIELD DESK</p><h2>Keep a listening list.</h2><p>Export the filtered metadata or open a saved Dawn Chorus JSON snapshot. Local files stay in this tab.</p></div><div class="tool-actions"><button id="export-csv">Export filtered CSV ↓</button><button id="export-json" class="quiet">Save collection JSON ↓</button><label class="file-button">Open snapshot JSON<input id="import-file" type="file" accept="application/json,.json"></label><button id="restore" class="quiet" hidden>Return to published collection</button><p id="import-status" role="status"></p></div></section>
+<section id="about" class="about"><div><p class="eyebrow">READ THE LABEL</p><h2>Every voice has<br>a source.</h2><p>Recordings belong to their recordists and carry individual Creative Commons licences. Credit the recordist, XC catalogue number, source and licence when reusing audio. Original recordings are streamed unchanged; Dawn Chorus does not create remixes.</p><p><a href="https://xeno-canto.org/about/terms" target="_blank" rel="noopener noreferrer">xeno-canto terms ↗</a> · <a href="https://xeno-canto.org/explore/api" target="_blank" rel="noopener noreferrer">API v3 documentation ↗</a></p></div><div><h3>Scope & collection</h3><p id="coverage">Six focal species, with locality names matching British Columbia or the Atlantic provinces: Nova Scotia, New Brunswick, Prince Edward Island and Newfoundland.</p><p>The collector requests the first 100 results for each of 30 species/province combinations. Locality text can miss recordings; results are a bounded sample. Dates on recording cards are recording dates, not upload or collection dates. Source quality is xeno-canto’s A–E rating, with A highest.</p><details><summary>See query coverage and snapshot history</summary><div id="coverage-detail"></div><div id="history"></div></details><h3>Privacy & connection</h3><p>Filters and imports run in this browser. Playing audio contacts xeno-canto; opening a source or licence link contacts that provider. The page never asks for an API key. A CoolCode counter records aggregate page opens without your filters or files.</p><p id="build-date"></p></div></section></main>
+<footer><a href="https://coolcode.ca/">CoolCode</a><span>Made for curious ears.</span><a href="{{SOURCE_URL}}">Source code ↗</a>{{ISSUE_LINK}}</footer><script type="module" src="./app.mjs"></script></body></html>

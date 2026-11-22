@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "tool": "dawnchorus",
+  "status": "pending",
+  "captured_at": null,
+  "checked_at": null,
+  "coverage": "Six focal species; locality-text matches for British Columbia and four Atlantic provinces; first 100 results per species/province query. Not a complete inventory or evidence of regional dialect.",
+  "records": [],
+  "sources": [],
+  "warnings": [
+    "The first authenticated source collection has not run. No recording counts or audio are available yet."
+  ]
+}

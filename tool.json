@@ -2,14 +2,14 @@
   "id": "dawnchorus",
   "title": "Dawn Chorus",
   "description": "Listen to the same bird species across Atlantic and Pacific Canada, with recording-level provenance.",
-  "category": "nature",
+  "category": "places",
   "tags": [
     "birds",
     "audio",
     "Canada",
     "comparison"
   ],
-  "icon": "bird",
+  "icon": "mic-vocal",
   "url": "/dawnchorus/",
   "source": "https://github.com/jsdyer/dawnchorus",
   "hosting": "project",

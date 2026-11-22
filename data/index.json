@@ -1,17 +1,1 @@
-{
-  "schema": 1,
-  "tool": "dawnchorus",
-  "status": "pending",
-  "source": "xeno-canto API v3",
-  "source_url": "https://xeno-canto.org/explore/api",
-  "captured_at": null,
-  "checked_at": null,
-  "record_count": 0,
-  "snapshot_count": 0,
-  "coverage": "Six focal species; locality-text matches for British Columbia and four Atlantic provinces; first 100 results per species/province query. Not a complete inventory or evidence of regional dialect.",
-  "latest": "current.json",
-  "history": "history.json",
-  "warnings": [
-    "The first authenticated source collection has not run. No recording counts or audio are available yet."
-  ]
-}
+{"captured_at":"2026-11-22T15:05:12Z","checked_at":"2026-11-22T15:05:12Z","coverage":"Six focal species; locality-text matches for British Columbia and four Atlantic provinces; first 100 results per species/province query. Not a complete inventory or evidence of regional dialect.","history":"history.json","latest":"current.json","record_count":345,"schema":1,"snapshot_count":1,"source":"xeno-canto API v3","source_url":"https://xeno-canto.org/explore/api","species_count":6,"status":"ready","tool":"dawnchorus","warnings":[]}

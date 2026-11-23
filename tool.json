@@ -16,6 +16,7 @@
   "access": "browser",
   "data_info": {
     "mode": "snapshot",
-    "detail": "Weekly xeno-canto API v3 snapshots of six bird species in British Columbia and Atlantic Canada, with original audio and recording-level licences."
+    "detail": "Weekly xeno-canto API v3 snapshots of six bird species in British Columbia and Atlantic Canada, with original audio and recording-level licences.",
+    "cadence": "Weekly"
   }
 }
